@@ -69,3 +69,77 @@ body {
     font-weight: 800;
     margin-top: 32px;
     margin-bottom: 11px; }
+
+.section--2 {
+  padding: 0px 24px;
+  box-sizing: border-box;
+  margin-top: 144px;
+  text-align: center; }
+  .section--2 h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 27px; }
+  .section--2 .plans-div {
+    margin-top: 80px;
+    text-align: left; }
+    .section--2 .plans-div .plan {
+      position: relative;
+      padding: 50px 30px 32px 30px;
+      background-color: #093F68;
+      border-radius: 8px; }
+      .section--2 .plans-div .plan h4 {
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 19px; }
+      .section--2 .plans-div .plan p {
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 26px; }
+      .section--2 .plans-div .plan strong {
+        font-size: 40px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 19px;
+        display: inline-block; }
+      .section--2 .plans-div .plan ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 15px; }
+        .section--2 .plans-div .plan ul li:last-child {
+          margin: 0px; }
+        .section--2 .plans-div .plan ul li svg {
+          fill: #3EE9E5; }
+      .section--2 .plans-div .plan .plan-icon {
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%); }
+    .section--2 .plans-div .plan--paid {
+      background-color: #3EE9E5;
+      margin-top: 65px;
+      color: #080C20 !important; }
+      .section--2 .plans-div .plan--paid h4 {
+        color: #080C20; }
+      .section--2 .plans-div .plan--paid p {
+        color: rgba(8, 12, 32, 0.6) !important; }
+      .section--2 .plans-div .plan--paid strong {
+        color: #080C20;
+        position: relative; }
+        .section--2 .plans-div .plan--paid strong::after {
+          content: "/ month";
+          font-size: 15px;
+          font-weight: 400;
+          color: rgba(8, 12, 32, 0.6);
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -60px; }
+      .section--2 .plans-div .plan--paid li {
+        color: #080C20 !important; }
+      .section--2 .plans-div .plan--paid svg {
+        fill: #093F68 !important; }

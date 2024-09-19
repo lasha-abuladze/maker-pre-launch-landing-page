@@ -44,3 +44,28 @@ body {
       margin-top: 23px; }
     .header article img {
       margin-top: 32px; }
+
+.section--1 {
+  text-align: center;
+  margin-top: 144px;
+  padding: 0px 24px; }
+  .section--1 ul li {
+    margin-bottom: 56px; }
+    .section--1 ul li:last-child {
+      margin: 0; }
+    .section--1 ul li .li-img {
+      background-color: #093F68;
+      width: 120px;
+      height: 123px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 35px; }
+  .section--1 ul h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 11px; }

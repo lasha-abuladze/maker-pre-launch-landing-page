@@ -43,10 +43,6 @@ body {
         width: 113%;
         height: 231px;
 
-        .background-sign {
-            display: none;
-        }
-
         .background-illustration {
             display: none;
         }
@@ -71,6 +67,10 @@ body {
         padding: 50px 24px 0px 24px;
         box-sizing: border-box;
 
+        .background-sign {
+            display: none;
+        }
+
         h1 {
             color: #fff;
             font-size: 32px;
@@ -81,7 +81,7 @@ body {
                 color: #3EE9E5;
             }
 
-            span {
+            .span--mobile {
                 display: block;
             }
         }
@@ -341,3 +341,173 @@ body {
     visibility: visible !important;
 }
  
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    .header {
+        padding-top: 48px;
+        position: relative;
+        overflow-x: hidden;
+        padding-bottom: 150px;
+    
+        .background-illustrations--div {
+            position: absolute;
+            width: 100%;
+            @include flex-row();
+            top: 250px;
+            z-index: -1;
+        
+            .background-illustration {
+                display: block;
+                position: absolute;
+            }
+
+            .illustration--left {
+                left: 0;
+                transform: translateX(-55%);
+            }
+
+            .illustration--right {
+                right: 0;
+                transform: translateX(55%);
+            }
+
+        
+            .background-illustration--mobile {
+                display: none;
+            }
+        
+        
+        
+        }
+    
+        .logo {
+            margin: 0;
+            margin-left: 40px;
+            margin-bottom: 67px;
+        }
+    
+        article {
+            text-align: center;
+            margin: auto;
+            width: 457px;
+            transform: translateY(50px);
+
+            .span--mobile {
+                display: inline !important;
+            }
+
+            .background-sign {
+                display: block;
+                position: absolute;
+                width: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 90%;
+                top: 0;
+            }
+    
+        }
+    
+    
+    }
+
+
+    .section--1 {
+        text-align: center;
+        margin-top: 50px;
+        padding: 0px 24px;
+    
+        ul {
+            max-width: 515px;
+            margin: auto;
+            // background-color: #777F98;
+    
+            li {
+                margin-bottom: 40px;
+                @include flex-row();
+                gap: 55px;
+                text-align: left;
+
+                &:nth-child(1n) {
+                    transform: translateX(30px);
+                }
+
+                &:nth-child(2n) {
+                    transform: translateX(-30px);
+                }
+    
+                .li-img {
+                    min-width: 120px;
+                }
+            }
+    
+            h3 {
+                margin-top: 0px;
+            }
+    
+        }
+    
+    }
+
+    .section--2 {
+
+        p {
+            max-width: 573px;
+            margin: auto;
+        }
+    
+        .plans-div {
+            max-width: 445px;
+            margin: auto;
+            margin-top: 80px;
+    
+            .plan {
+                padding: 50px 38px 40px 38px;
+            }
+        }
+    
+    }
+
+    .footer {
+    
+        h2 {    
+            span {
+                display: inline;
+            }
+        }
+    
+        form {
+            width: 475px;
+            margin: auto;
+            @include flex-row();
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            gap: 16px;
+
+            #email-inp {
+                min-width: 320px;
+            }
+        
+            .arror-span {
+                position: absolute;
+                left: 0;
+                bottom: -30px;
+                padding: 0;
+                margin: 0;
+            }
+    
+            .submit-btn {
+                width: 140px;
+            }         
+    
+        }
+    }
+    
+    
+}
